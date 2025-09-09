@@ -25,7 +25,6 @@ public class LookupCommand {
     public static void register(CommandDispatcher<FabricClientCommandSource> dispatcher) {
         // Rejestrujemy komendę
         registerAlias(dispatcher, "lookup");
-        registerAlias(dispatcher, "player");
         registerAlias(dispatcher, "gracz");
         registerAlias(dispatcher, "klasy");
     }
@@ -106,3 +105,4 @@ public class LookupCommand {
         }
     }
 }
+
