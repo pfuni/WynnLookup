@@ -4,7 +4,7 @@
   "version": "1.1.0",
   "name": "WynnLookup",
   "description": "Sprawdzanie poziomow postaci gracza komenda /lookup",
-  "authors": ["pfuni"],
+  "authors": ["pfuni, sawaj"],
   "contact": {},
   "license": "MIT",
   "environment": "*",
@@ -16,3 +16,4 @@
     "fabric": "*"
   }
 }
+
