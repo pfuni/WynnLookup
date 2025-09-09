@@ -23,7 +23,16 @@ public class LookupCommand {
     private static final Gson gson = new Gson();
 
     public static void register(CommandDispatcher<FabricClientCommandSource> dispatcher) {
-        dispatcher.register(ClientCommandManager.literal("lookup")
+        // Rejestrujemy komendę
+        registerAlias(dispatcher, "lookup");
+        registerAlias(dispatcher, "player");
+        registerAlias(dispatcher, "gracz");
+        registerAlias(dispatcher, "klasy");
+    }
+
+    // Pomocnicza metoda rejestrująca pojedynczy alias komendy
+    private static void registerAlias(CommandDispatcher<FabricClientCommandSource> dispatcher, String alias) {
+        dispatcher.register(ClientCommandManager.literal(alias)
                 .then(ClientCommandManager.argument("player", StringArgumentType.word())
                         .executes(context -> {
                             String playerName = StringArgumentType.getString(context, "player");
