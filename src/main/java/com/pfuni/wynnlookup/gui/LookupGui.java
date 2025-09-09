@@ -38,7 +38,7 @@ public class LookupGui extends Screen {
                 button -> {
                     if (MinecraftClient.getInstance().player != null) {
                         MinecraftClient.getInstance().player.networkHandler.sendCommand(
-                                "msg " + playerName + " hej"
+                                "msg " + playerName + " Siemanko!"
                         );
                     }
                 }
@@ -157,3 +157,4 @@ public class LookupGui extends Screen {
         return true;
     }
 }
+
